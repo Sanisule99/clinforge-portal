@@ -1,8 +1,8 @@
-﻿import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lab Results â€” ClinForge",
+  title: "Lab Results Ã¢â‚¬â€ ClinForge",
   description: "Securely view your laboratory results.",
   robots: { index: false, follow: false }, // never index patient links
 };

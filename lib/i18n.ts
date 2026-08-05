@@ -1,4 +1,4 @@
-// lib/i18n.ts — UI chrome strings only.
+// lib/i18n.ts Ã¢â‚¬â€ UI chrome strings only.
 // The clinical result copy (summaries, meanings) is produced by the backend
 // in the patient's language, so it is NOT duplicated here.
 
@@ -22,7 +22,7 @@ export const STRINGS = {
     o_resend_btn: "Send again",
     o_wait: "Send again in",
     o_verify: "View my results",
-    o_sending: "Checking…",
+    o_sending: "CheckingÃ¢â‚¬Â¦",
     r_result: "Result",
     r_normal: "Normal",
     accession: "Accession",
@@ -36,63 +36,63 @@ export const STRINGS = {
     pdf_t: "Full laboratory report",
     pdf_s: "The complete signed report with all values and reference ranges.",
     pdf_btn: "Download report (PDF)",
-    pdf_downloading: "Preparing…",
+    pdf_downloading: "PreparingÃ¢â‚¬Â¦",
     pdf_block_t: "Collect your full report at the laboratory",
     pdf_block_s:
       "Because one result must be explained in person, the full PDF is given at the lab, not online.",
-    foot: "Secure link · Do not share",
+    foot: "Secure link Ã‚Â· Do not share",
     err_expired_t: "This link has expired",
     err_expired_s:
       "For your safety, result links expire after 72 hours. Please contact the laboratory to receive a new one.",
     err_network_t: "Can't connect",
     err_network_s: "Please check your connection and try again.",
     retry: "Try again",
-    loading: "Loading…",
+    loading: "LoadingÃ¢â‚¬Â¦",
   },
   fr: {
-    brandTag: "Résultats du patient",
-    v_title: "Vos résultats d'analyses sont prêts",
+    brandTag: "RÃƒÂ©sultats du patient",
+    v_title: "Vos rÃƒÂ©sultats d'analyses sont prÃƒÂªts",
     v_lede:
-      "Pour protéger vos résultats, nous enverrons un code à 6 chiffres au numéro enregistré.",
-    v_key: "Le code sera envoyé à",
+      "Pour protÃƒÂ©ger vos rÃƒÂ©sultats, nous enverrons un code ÃƒÂ  6 chiffres au numÃƒÂ©ro enregistrÃƒÂ©.",
+    v_key: "Le code sera envoyÃƒÂ© ÃƒÂ ",
     v_btn: "Envoyer mon code",
     v_foot2: "Vous n'attendiez pas ce message ? Contactez le laboratoire.",
     o_title: "Entrez votre code",
-    o_lede_a: "Nous avons envoyé un code à 6 chiffres au",
+    o_lede_a: "Nous avons envoyÃƒÂ© un code ÃƒÂ  6 chiffres au",
     o_lede_b: "Il expire dans 10 minutes.",
-    o_err: "Ce code est incorrect. Veuillez vérifier et réessayer.",
+    o_err: "Ce code est incorrect. Veuillez vÃƒÂ©rifier et rÃƒÂ©essayer.",
     o_locked: "Trop de tentatives. Veuillez demander un nouveau code.",
-    o_resend: "Rien reçu ?",
+    o_resend: "Rien reÃƒÂ§u ?",
     o_resend_btn: "Renvoyer",
     o_wait: "Renvoyer dans",
-    o_verify: "Voir mes résultats",
-    o_sending: "Vérification…",
-    r_result: "Résultat",
+    o_verify: "Voir mes rÃƒÂ©sultats",
+    o_sending: "VÃƒÂ©rificationÃ¢â‚¬Â¦",
+    r_result: "RÃƒÂ©sultat",
     r_normal: "Normal",
-    accession: "N° d'accession",
+    accession: "NÃ‚Â° d'accession",
     orderedBy: "Prescrit par",
-    released: "Publié le",
+    released: "PubliÃƒÂ© le",
     r_status: {
       normal: "Valeurs habituelles",
-      attention: "À surveiller",
+      attention: "Ãƒâ‚¬ surveiller",
       withheld: "Remis en personne",
     },
     pdf_t: "Rapport de laboratoire complet",
     pdf_s:
-      "Le rapport signé complet avec toutes les valeurs et plages de référence.",
-    pdf_btn: "Télécharger le rapport (PDF)",
-    pdf_downloading: "Préparation…",
+      "Le rapport signÃƒÂ© complet avec toutes les valeurs et plages de rÃƒÂ©fÃƒÂ©rence.",
+    pdf_btn: "TÃƒÂ©lÃƒÂ©charger le rapport (PDF)",
+    pdf_downloading: "PrÃƒÂ©parationÃ¢â‚¬Â¦",
     pdf_block_t: "Retirez votre rapport complet au laboratoire",
     pdf_block_s:
-      "Comme un résultat doit être expliqué en personne, le PDF complet est remis au laboratoire, non en ligne.",
-    foot: "Lien sécurisé · Ne pas partager",
-    err_expired_t: "Ce lien a expiré",
+      "Comme un rÃƒÂ©sultat doit ÃƒÂªtre expliquÃƒÂ© en personne, le PDF complet est remis au laboratoire, non en ligne.",
+    foot: "Lien sÃƒÂ©curisÃƒÂ© Ã‚Â· Ne pas partager",
+    err_expired_t: "Ce lien a expirÃƒÂ©",
     err_expired_s:
-      "Pour votre sécurité, les liens expirent après 72 heures. Contactez le laboratoire pour en recevoir un nouveau.",
+      "Pour votre sÃƒÂ©curitÃƒÂ©, les liens expirent aprÃƒÂ¨s 72 heures. Contactez le laboratoire pour en recevoir un nouveau.",
     err_network_t: "Connexion impossible",
-    err_network_s: "Vérifiez votre connexion et réessayez.",
-    retry: "Réessayer",
-    loading: "Chargement…",
+    err_network_s: "VÃƒÂ©rifiez votre connexion et rÃƒÂ©essayez.",
+    retry: "RÃƒÂ©essayer",
+    loading: "ChargementÃ¢â‚¬Â¦",
   },
 };
 
@@ -103,7 +103,7 @@ export function pickLang(raw?: string): Lang {
 }
 
 export function fmtDate(iso: string | null, lang: Lang): string {
-  if (!iso) return "—";
+  if (!iso) return "Ã¢â‚¬â€";
   try {
     return new Date(iso).toLocaleDateString(lang === "fr" ? "fr-FR" : "en-GB", {
       day: "numeric",

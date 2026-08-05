@@ -1,4 +1,4 @@
-﻿// Root of results.integrishds.com with no token in the URL.
+// Root of results.integrishds.com with no token in the URL.
 // Patients always arrive via /r/<token> from their SMS, so this is just a
 // friendly signpost rather than an error.
 
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="scroll">
         <div className="screen center-screen">
           <div className="big" style={{ fontSize: 40, marginBottom: 14 }}>
-            ðŸ”—
+            Ã°Å¸â€â€”
           </div>
           <h1>Open your results from your message</h1>
           <p className="lede" style={{ marginTop: 12 }}>

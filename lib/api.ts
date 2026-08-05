@@ -1,4 +1,4 @@
-﻿// lib/api.ts â€” thin client for the ClinForge /portal endpoints.
+// lib/api.ts Ã¢â‚¬â€ thin client for the ClinForge /portal endpoints.
 // Every call maps 1:1 to a backend route so the flow is easy to trace.
 
 const BASE = process.env.NEXT_PUBLIC_API_URL || "";
