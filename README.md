@@ -1,4 +1,4 @@
-# LabFlow Patient Result Portal — `results.integrishds.com`
+﻿# ClinForge Patient Result Portal â€” `results.integrishds.com`
 
 A standalone Next.js 14 app, separate from the staff frontend on purpose:
 patients never load the admin bundle or auth, and the app stays tiny
@@ -7,19 +7,19 @@ patients never load the admin bundle or auth, and the app stays tiny
 ## Flow
 
 ```
-SMS link  ──▶  /r/<token>
-                  │  POST /portal/session/info   (masked phone, no OTP sent)
-                  ▼
-             Verify screen ──tap──▶ POST /portal/session/start   (OTP sent)
-                  ▼
-             Code screen  ──6 digits──▶ POST /portal/session/verify → session JWT
-                  ▼
-             Results      ──▶ GET /portal/result        (plain-language cards)
-                          ──▶ GET /portal/result/pdf     (if pdf_available)
+SMS link  â”€â”€â–¶  /r/<token>
+                  â”‚  POST /portal/session/info   (masked phone, no OTP sent)
+                  â–¼
+             Verify screen â”€â”€tapâ”€â”€â–¶ POST /portal/session/start   (OTP sent)
+                  â–¼
+             Code screen  â”€â”€6 digitsâ”€â”€â–¶ POST /portal/session/verify â†’ session JWT
+                  â–¼
+             Results      â”€â”€â–¶ GET /portal/result        (plain-language cards)
+                          â”€â”€â–¶ GET /portal/result/pdf     (if pdf_available)
 ```
 
 The clinical copy (summaries, meanings) comes from the backend in the
-patient's language — `lib/i18n.ts` holds only UI chrome.
+patient's language â€” `lib/i18n.ts` holds only UI chrome.
 
 ## Local dev
 
@@ -36,10 +36,10 @@ side), read the raw token from the backend log, then open
 ## Deploy to Vercel
 
 1. Push this folder to a repo (or a subdir Vercel points at).
-2. New Vercel project → framework **Next.js**.
+2. New Vercel project â†’ framework **Next.js**.
 3. Env var: `NEXT_PUBLIC_API_URL = https://lucid-magic-production.up.railway.app`
-4. Add domain `results.integrishds.com` (GoDaddy CNAME → Vercel, same as
-   labflow.integrishds.com).
+4. Add domain `results.integrishds.com` (GoDaddy CNAME â†’ Vercel, same as
+   clinforge.integrishds.com).
 
 ## Backend prerequisites
 

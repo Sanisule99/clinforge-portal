@@ -9,7 +9,7 @@ export default function Home() {
         <div className="brand">
           <div className="mark">L</div>
           <div className="txt">
-            <div className="name">LabFlow</div>
+            <div className="name">ClinForge</div>
             <div className="tag">Patient Results</div>
           </div>
         </div>
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="scroll">
         <div className="screen center-screen">
           <div className="big" style={{ fontSize: 40, marginBottom: 14 }}>
-            &#128279;
+            ðŸ”—
           </div>
           <h1>Open your results from your message</h1>
           <p className="lede" style={{ marginTop: 12 }}>
