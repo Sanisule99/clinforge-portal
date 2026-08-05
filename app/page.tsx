@@ -17,7 +17,7 @@ export default function Home() {
       <div className="scroll">
         <div className="screen center-screen">
           <div className="big" style={{ fontSize: 40, marginBottom: 14 }}>
-            Ã°Å¸â€â€”
+            &#128279;
           </div>
           <h1>Open your results from your message</h1>
           <p className="lede" style={{ marginTop: 12 }}>

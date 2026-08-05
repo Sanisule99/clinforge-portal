@@ -1,7 +1,7 @@
 "use client";
 
 // -------------------------------------------------------------------
-// /demo Ã¢â‚¬â€ a permanent, shareable walkthrough of the patient experience.
+// /demo -- a permanent, shareable walkthrough of the patient experience.
 //
 // Identical UI to the real /r/[token] flow, but running on mock data with
 // NO backend calls and NO real OTP. Safe to open on any phone, anytime,
@@ -38,44 +38,44 @@ const RESULTS: DemoResult[] = [
     name: { en: "Malaria Test", fr: "Test de paludisme" },
     measures: {
       en: "This checks whether you have malaria parasites in your blood.",
-      fr: "Ce test vÃƒÂ©rifie la prÃƒÂ©sence de parasites du paludisme dans votre sang.",
+      fr: "Ce test v\u00E9rifie la pr\u00E9sence de parasites du paludisme dans votre sang.",
     },
     value: "Positive",
     valueFr: "Positif",
     unit: null,
     meaning: {
       en: "Malaria parasites were found. Malaria is treatable, but treatment should start quickly. Please go to your clinic today.",
-      fr: "Des parasites du paludisme ont ÃƒÂ©tÃƒÂ© trouvÃƒÂ©s. Le paludisme se soigne, mais le traitement doit commencer rapidement. Rendez-vous ÃƒÂ  votre clinique aujourd'hui.",
+      fr: "Des parasites du paludisme ont \u00E9t\u00E9 trouv\u00E9s. Le paludisme se soigne, mais le traitement doit commencer rapidement. Rendez-vous \u00E0 votre clinique aujourd'hui.",
     },
   },
   {
     code: "GLUC",
     status: "attention",
-    name: { en: "Blood Sugar (Glucose)", fr: "GlycÃƒÂ©mie (Glucose)" },
+    name: { en: "Blood Sugar (Glucose)", fr: "Glyc\u00E9mie (Glucose)" },
     measures: {
       en: "This measures the amount of sugar in your blood.",
-      fr: "Ce test mesure la quantitÃƒÂ© de sucre dans votre sang.",
+      fr: "Ce test mesure la quantit\u00E9 de sucre dans votre sang.",
     },
     value: "12.4",
     unit: "mmol/L",
     meaning: {
       en: "Your blood sugar is higher than usual. This can happen after eating, but it can also be a sign of diabetes. Your clinician will explain what it means for you.",
-      fr: "Votre glycÃƒÂ©mie est plus ÃƒÂ©levÃƒÂ©e que la normale. Cela peut arriver aprÃƒÂ¨s un repas, mais peut aussi indiquer un diabÃƒÂ¨te. Votre mÃƒÂ©decin vous expliquera ce que cela signifie.",
+      fr: "Votre glyc\u00E9mie est plus \u00E9lev\u00E9e que la normale. Cela peut arriver apr\u00E8s un repas, mais peut aussi indiquer un diab\u00E8te. Votre m\u00E9decin vous expliquera ce que cela signifie.",
     },
   },
   {
     code: "CBC",
     status: "normal",
-    name: { en: "Full Blood Count", fr: "NumÃƒÂ©ration Formule Sanguine" },
+    name: { en: "Full Blood Count", fr: "Num\u00E9ration Formule Sanguine" },
     measures: {
       en: "This counts the different types of cells in your blood.",
-      fr: "Ce test compte les diffÃƒÂ©rents types de cellules dans votre sang.",
+      fr: "Ce test compte les diff\u00E9rents types de cellules dans votre sang.",
     },
     value: null,
     unit: null,
     meaning: {
       en: "This result is in the usual range.",
-      fr: "Ce rÃƒÂ©sultat se situe dans les valeurs habituelles.",
+      fr: "Ce r\u00E9sultat se situe dans les valeurs habituelles.",
     },
   },
   {
@@ -87,7 +87,7 @@ const RESULTS: DemoResult[] = [
     unit: null,
     meaning: {
       en: "One of your results needs to be explained by a health worker in person. Please contact the laboratory or your clinician today.",
-      fr: "L'un de vos rÃƒÂ©sultats doit vous ÃƒÂªtre expliquÃƒÂ© en personne par un professionnel de santÃƒÂ©. Veuillez contacter le laboratoire ou votre mÃƒÂ©decin aujourd'hui.",
+      fr: "L'un de vos r\u00E9sultats doit vous \u00EAtre expliqu\u00E9 en personne par un professionnel de sant\u00E9. Veuillez contacter le laboratoire ou votre m\u00E9decin aujourd'hui.",
     },
   },
 ];
@@ -100,8 +100,8 @@ const SUMMARY: Record<Lang, { attention: string; normal: string }> = {
   },
   fr: {
     attention:
-      "Certains rÃƒÂ©sultats nÃƒÂ©cessitent votre attention. Lisez-les ci-dessous et contactez votre mÃƒÂ©decin.",
-    normal: "Tous vos rÃƒÂ©sultats se situent dans les valeurs habituelles.",
+      "Certains r\u00E9sultats n\u00E9cessitent votre attention. Lisez-les ci-dessous et contactez votre m\u00E9decin.",
+    normal: "Tous vos r\u00E9sultats se situent dans les valeurs habituelles.",
   },
 };
 
@@ -121,7 +121,7 @@ export default function DemoPortal() {
           <div className="txt">
             <div className="name">ClinForge</div>
             <div className="tag">
-              {LAB} Ã‚Â· {t.brandTag}
+              {LAB} &#183; {t.brandTag}
             </div>
           </div>
         </div>
@@ -147,8 +147,8 @@ export default function DemoPortal() {
         }}
       >
         {lang === "fr"
-          ? "DÃƒâ€°MONSTRATION Ã‚Â· donnÃƒÂ©es fictives"
-          : "DEMONSTRATION Ã‚Â· sample data"}
+          ? "D\u00C9MONSTRATION \u00B7 donn\u00E9es fictives"
+          : "DEMONSTRATION \u00B7 sample data"}
       </div>
 
       <div className="scroll">
@@ -172,7 +172,7 @@ function Verify({
   return (
     <div className="screen center-verify">
       <div className="big" style={{ fontSize: 34, marginBottom: 6 }}>
-        Ã°Å¸â€â€™
+        &#128274;
       </div>
       <h1>{t.v_title}</h1>
       <p className="lede">{t.v_lede}</p>
@@ -182,7 +182,7 @@ function Verify({
       </div>
       <div className="spacer" />
       <button className="btn btn-primary" onClick={onSend}>
-        {t.v_btn} Ã¢â€ â€™
+        {t.v_btn} &#8594;
       </button>
       <p className="hint">
         {LAB}. {t.v_foot2}
@@ -282,7 +282,7 @@ function Otp({
       <p className="hint" style={{ marginTop: 22 }}>
         {t.brandTag === "Patient Results"
           ? "Demo tip: any 6 digits ending in an even number will verify."
-          : "Astuce : tout code ÃƒÂ  6 chiffres se terminant par un chiffre pair fonctionne."}
+          : "Astuce : tout code \u00E0 6 chiffres se terminant par un chiffre pair fonctionne."}
       </p>
     </div>
   );
@@ -307,13 +307,13 @@ function Results({
         <div className="rmeta">
           {t.accession} <span className="mono">IGL-2026-00001</span>
           <br />
-          {t.released} {fmtDate(RELEASED_ISO, lang)} Ã‚Â· {t.orderedBy} Dr. Ama
+          {t.released} {fmtDate(RELEASED_ISO, lang)} &#183; {t.orderedBy} Dr. Ama
           Owusu
         </div>
       </div>
 
       <div className={`summary ${anyAttention ? "attention" : "normal"}`}>
-        <span className="ic">{anyAttention ? "Ã¢Å¡Â Ã¯Â¸Â" : "Ã¢Å“â€œ"}</span>
+        <span className="ic">{anyAttention ? "\u26A0\uFE0F" : "\u2713"}</span>
         <span>{anyAttention ? SUMMARY[lang].attention : SUMMARY[lang].normal}</span>
       </div>
 
@@ -361,13 +361,13 @@ function Results({
               <div className="ps">{t.pdf_s}</div>
             </div>
           </div>
-          <button className="btn btn-primary mini">Ã¢â€ â€œ {t.pdf_btn}</button>
+          <button className="btn btn-primary mini">&#8595; {t.pdf_btn}</button>
         </div>
       )}
 
       <div className="disclaimer">
         {lang === "fr"
-          ? "Ces rÃƒÂ©sultats font partie de votre dossier mÃƒÂ©dical. Ils ne remplacent pas l'avis de votre mÃƒÂ©decin, qui les interprÃƒÂ©tera avec vos symptÃƒÂ´mes."
+          ? "Ces r\u00E9sultats font partie de votre dossier m\u00E9dical. Ils ne remplacent pas l'avis de votre m\u00E9decin, qui les interpr\u00E9tera avec vos sympt\u00F4mes."
           : "These results are part of your medical record. They do not replace advice from your clinician, who will interpret them together with your symptoms."}
       </div>
       <div className="footer-note">{t.foot}</div>

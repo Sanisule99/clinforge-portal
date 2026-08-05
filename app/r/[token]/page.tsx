@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -104,11 +104,11 @@ export default function PortalFlow({ params }: { params: { token: string } }) {
           <Results t={t} lang={lang} data={result} sessionToken={sessionToken} />
         )}
         {step === "expired" && (
-          <ErrorScreen icon="â³" title={t.err_expired_t} sub={t.err_expired_s} />
+          <ErrorScreen icon="\u23F3" title={t.err_expired_t} sub={t.err_expired_s} />
         )}
         {step === "offline" && (
           <ErrorScreen
-            icon="ðŸ“¡"
+            icon="\uD83D\uDCE1"
             title={t.err_network_t}
             sub={t.err_network_s}
             action={{ label: t.retry, onClick: () => location.reload() }}
@@ -141,7 +141,7 @@ function TopBar({
         <div className="txt">
           <div className="name">ClinForge</div>
           <div className="tag">
-            {labName} Â· {tag}
+            {labName} &#183; {tag}
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@ function Verify({
   return (
     <div className="screen center-verify">
       <div className="big" style={{ fontSize: 34, marginBottom: 6 }}>
-        ðŸ”’
+        &#128274;
       </div>
       <h1>{t.v_title}</h1>
       <p className="lede">{t.v_lede}</p>
@@ -213,7 +213,7 @@ function Verify({
           setBusy(false);
         }}
       >
-        {t.v_btn} â†’
+        {t.v_btn} &#8594;
       </button>
       <p className="hint">
         {labName}. {t.v_foot2}
@@ -393,7 +393,7 @@ function Results({
     try {
       await downloadPdf(sessionToken);
     } catch {
-      /* swallow â€” button returns to idle */
+      /* swallow -- button returns to idle */
     } finally {
       setDownloading(false);
     }
@@ -404,15 +404,15 @@ function Results({
       <div className="rhead">
         <div className="rname">{data.patient.name}</div>
         <div className="rmeta">
-          {t.accession} <span className="mono">{data.accession_no || "â€”"}</span>
+          {t.accession} <span className="mono">{data.accession_no || "\u2014"}</span>
           <br />
           {t.released} {fmtDate(data.released_at, lang)}
-          {data.ordered_by ? ` Â· ${t.orderedBy} ${data.ordered_by}` : ""}
+          {data.ordered_by ? ` \u00B7 ${t.orderedBy} ${data.ordered_by}` : ""}
         </div>
       </div>
 
       <div className={`summary ${anyAttention ? "attention" : "normal"}`}>
-        <span className="ic">{anyAttention ? "âš ï¸" : "âœ“"}</span>
+        <span className="ic">{anyAttention ? "\u26A0\uFE0F" : "\u2713"}</span>
         <span>{data.summary}</span>
       </div>
 
@@ -455,7 +455,7 @@ function Results({
             disabled={downloading}
             onClick={onDownload}
           >
-            {downloading ? t.pdf_downloading : `â†“ ${t.pdf_btn}`}
+            {downloading ? t.pdf_downloading : `\u2193 ${t.pdf_btn}`}
           </button>
         </div>
       ) : (
